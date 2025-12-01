@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Saj Menu - Saj Al Sayyed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #17a697 0%, #1e8b7f 50%, #0d5f57 100%);
+            min-height: 100vh;
+            padding-bottom: 20px;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background: rgba(13, 95, 87, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .nav-button {
+            padding: 12px 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .nav-button.active {
+            background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .menu-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .nav-button {
+                padding: 10px 12px;
+                font-size: 11px;
+            }
+
+            .header {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav-container">
+            <a href="crepe.html" class="nav-button">Crepe</a>
+            <a href="kaake.html" class="nav-button">Kaake</a>
+            <a href="saj.html" class="nav-button">Saj</a>
+            <a href="special-saj.html" class="nav-button active">Special Saj</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="special-saj.png" alt="Special Saj Menu" class="menu-image">
+    </div>
+</body>
+</html>
