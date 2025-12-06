@@ -101,13 +101,17 @@
 
         @media (max-width: 480px) {
             .nav-container {
-                grid-template-columns: 1fr 1fr;
+                display: flex;
+                overflow-x: auto;
                 gap: 8px;
+                flex-wrap: nowrap;
             }
 
             .nav-button {
                 padding: 10px 12px;
                 font-size: 11px;
+                flex-shrink: 0;
+                min-width: fit-content;
             }
 
             .header {
